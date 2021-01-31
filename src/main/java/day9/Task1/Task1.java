@@ -25,7 +25,7 @@ abstract class Human {
     }
 
     public void printInfo(){
-        System.out.printf("Этот человек с именем %s", name);
+        System.out.printf("Этот человек с именем %s\n", name);
     }
 }
 
@@ -41,7 +41,7 @@ class Student extends Human{
         return groupName;
     }
     public void printInfo(){
-        System.out.printf("Этот человек с именем %s\n", super.getName());
+        super.printInfo();
         System.out.printf("Этот студент с именем %s\n", super.getName());
     }
 }
@@ -57,7 +57,7 @@ class Teacher extends Human{
     }
 
     public void printInfo(){
-        System.out.printf("Этот человек с именем %s\n", super.getName());
+        super.printInfo();
         System.out.printf("Этот преподаватель с именем %s\n", super.getName());
     }
 }
